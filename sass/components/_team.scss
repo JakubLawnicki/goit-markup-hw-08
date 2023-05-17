@@ -1,0 +1,71 @@
+.team {
+  background-color: $teamBackground;
+
+  &__box {
+    flex-direction: column;
+  }
+
+  &__card {
+    background-color: $backgroundColor;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+  }
+
+  &__job {
+    font-size: 16px;
+    line-height: 1.2;
+    color: $headerLinkColor;
+    text-align: center;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 30px;
+    padding-inline-start: 0;
+    flex-wrap: wrap;
+  }
+
+  &__name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+}
+
+.team-media {
+  width: 206px;
+  height: 56px;
+  margin: 16px auto 18px;
+
+  &__icon {
+    display: block;
+  }
+
+  &__icons {
+    padding: 12px;
+    border-radius: 50%;
+    fill: $iconsColor;
+    display: block;
+    transition-property: background-color, fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      background-color: $hoverColor;
+      fill: $backgroundColor;
+      cursor: pointer;
+    }
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+}
