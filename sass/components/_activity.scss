@@ -2,6 +2,10 @@
   flex-direction: column;
   padding-top: 0;
 
+  @media screen and (max-width: 480px) {
+    display: none;
+  }
+
   &__description {
     width: 370px;
     height: 70px;

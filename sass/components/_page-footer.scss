@@ -1,6 +1,11 @@
 .footer {
   background-color: $footerBackground;
 
+  @media screen and (max-width: 480px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
   &__address {
     font-size: 14px;
     line-height: 1.71;
@@ -10,16 +15,34 @@
   }
 
   &__box {
-    padding: 60px 15px;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+    flex-direction: column;
+    row-gap: 60px;
+    width: 100%;
+
+    @media screen and (min-width: 1200px) {
+      padding: 60px 15px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-direction: row;
+    }
 
     &-second {
       display: flex;
-      justify-content: center;
-      column-gap: 78px;
-      margin-top: 12px;
+      flex-direction: column;
+      align-items: center;
+      row-gap: 60px;
+
+      @media screen and (max-width: 480px) {
+        width: 100%;
+      }
+
+      @media screen and (min-width: 1200px) {
+        flex-direction: row;
+        justify-content: center;
+        column-gap: 78px;
+        margin-top: 12px;
+      }
     }
   }
 
@@ -52,12 +75,23 @@
   &__navigation {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+
+    @media screen and (min-width: 1200px) {
+      align-items: flex-start;
+    }
   }
 }
 
 .footer-media {
   width: 206px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media screen and (min-width: 1200px) {
+    align-items: flex-start;
+  }
 
   &__heading {
     text-transform: uppercase;
@@ -95,7 +129,13 @@
 .newsletter {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+  @media screen and (min-width: 1200px) {
+    justify-content: center;
+    align-items: flex-start;
+  }
 
   &__button {
     background: $hoverColor;
@@ -110,7 +150,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10px 28px 10px 42px;
+    width: 200px;
+    height: 50px;
 
     &-icon {
       margin-left: 24px;
@@ -119,9 +160,17 @@
 
   &__form {
     display: flex;
-    justify-content: stretch;
-    column-gap: 12px;
-    max-height: 50px;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+    width: 100%;
+
+    @media screen and (min-width: 1200px) {
+      justify-content: stretch;
+      flex-direction: row;
+      column-gap: 12px;
+      max-height: 50px;
+    }
   }
 
   &__heading {
@@ -143,10 +192,14 @@
     font-size: 16px;
     color: $backgroundColor;
     line-height: 1.25;
-    width: 358px;
+    width: 100%;
     transition-property: border-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    @media screen and (min-width: 1200px) {
+      width: 358px;
+    }
 
     &:hover,
     &:focus {
