@@ -1,9 +1,16 @@
 .footer {
   background-color: $footerBackground;
+  max-width: 480px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  margin: 0 auto;
 
-  @media screen and (max-width: 480px) {
-    padding-top: 60px;
-    padding-bottom: 60px;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    max-width: 768px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 1600px;
   }
 
   &__address {
@@ -20,7 +27,6 @@
     width: 100%;
 
     @media screen and (min-width: 1200px) {
-      padding: 60px 15px;
       display: flex;
       justify-content: space-between;
       align-items: flex-start;
@@ -33,15 +39,20 @@
       align-items: center;
       row-gap: 60px;
 
-      @media screen and (max-width: 480px) {
+      @media screen and (min-width: 768px) and (max-width: 1199px) {
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
         width: 100%;
+        padding-left: 61px;
+        padding-right: 74px;
       }
 
       @media screen and (min-width: 1200px) {
         flex-direction: row;
         justify-content: center;
-        column-gap: 78px;
-        margin-top: 12px;
+        align-items: flex-start;
+        column-gap: 70px;
       }
     }
   }
@@ -89,8 +100,13 @@
   flex-direction: column;
   align-items: center;
 
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    padding-top: 5px;
+  }
+
   @media screen and (min-width: 1200px) {
     align-items: flex-start;
+    padding-top: 12px;
   }
 
   &__heading {
@@ -130,11 +146,13 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
+  width: 450px;
 
   @media screen and (min-width: 1200px) {
+    width: 570px;
     justify-content: center;
     align-items: flex-start;
+    padding-top: 12px;
   }
 
   &__button {
