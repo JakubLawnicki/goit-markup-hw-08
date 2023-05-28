@@ -1,10 +1,15 @@
 .filter {
   display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
   margin: 0 auto;
-  justify-content: center;
   column-gap: 8px;
-  padding-top: 94px;
-  padding-bottom: 50px;
+  row-gap: 15px;
+  padding: 94px 15px 50px 15px;
+
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+  }
 
   &__button {
     background: $teamBackground;

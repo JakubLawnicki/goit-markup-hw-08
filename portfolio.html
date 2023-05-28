@@ -60,6 +60,56 @@
             >
           </li>
         </ul>
+        <button
+          class="menu-navigation__button menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="menu-navigation__icon" width="40" height="40">
+            <use href="./images/icons.svg#icon-menu_40px"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="menu-container js-menu-container" id="mobile-menu">
+        <button class="menu-toggle js-close-menu">
+          <svg width="40" height="40">
+            <use href="./images/icons.svg#icon-close_40px"></use>
+          </svg>
+        </button>
+        <ul class="menu-navigation__links">
+          <li>
+            <a class="menu-navigation__link" href="index.html">Agencja</a>
+          </li>
+          <li>
+            <a class="menu-navigation__link--portfolio" href="portfolio.html"
+              >Portfolio</a
+            >
+          </li>
+          <li>
+            <a class="menu-navigation__link" href="#">Kontakt</a>
+          </li>
+        </ul>
+        <div class="menu-container__box">
+          <div class="menu-container__contact">
+            <a class="menu-container__phone" href="tel:+48111111111"
+              >+48 111 111 111</a
+            >
+            <a class="menu-container__mail" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </div>
+          <ul class="menu-container__media">
+            <li>
+              <a class="menu-container__media-link" href="#">Instagram</a>
+            </li>
+            <li><div class="menu-container__line"></div></li>
+            <li><a class="menu-container__media-link" href="#">Twitter</a></li>
+            <li><div class="menu-container__line"></div></li>
+            <li><a class="menu-container__media-link" href="#">Facebook</a></li>
+            <li><div class="menu-container__line"></div></li>
+            <li><a class="menu-container__media-link" href="#">LinkedIn</a></li>
+          </ul>
+        </div>
       </div>
     </header>
     <!-- Przyciski filtra -->
@@ -97,10 +147,17 @@
                 </p>
               </div>
               <img
-                src="images/Portfolio/project1.jpg"
+                src="./images/Portfolio/project1-354.jpg"
                 alt="Technocrack - strona internetowa"
-                width="370"
-                height="294"
+                srcset="
+                  ./images/Portfolio/project1-354.jpg    354w,
+                  ./images/Portfolio/project1-370.jpg    370w,
+                  ./images/Portfolio/project1-450.jpg    450w,
+                  ./images/Portfolio/project1-354@2x.jpg 708w,
+                  ./images/Portfolio/project1-370@2x.jpg 740w,
+                  ./images/Portfolio/project1-450@2x.jpg 900w
+                "
+                sizes="(max-width: 480px) 450px, (max-width: 768px) 354px, (min-width: 1200px) 370px"
               />
             </div>
             <div class="projects__box">
@@ -121,10 +178,17 @@
                 </p>
               </div>
               <img
-                src="images/Portfolio/project2.jpg"
+                src="./images/Portfolio/project2-354.jpg"
                 alt="Grafika New Orlean vs Golden Star"
-                width="370"
-                height="294"
+                srcset="
+                  ./images/Portfolio/project2-354.jpg    354w,
+                  ./images/Portfolio/project2-370.jpg    370w,
+                  ./images/Portfolio/project2-450.jpg    450w,
+                  ./images/Portfolio/project2-354@2x.jpg 708w,
+                  ./images/Portfolio/project2-370@2x.jpg 740w,
+                  ./images/Portfolio/project2-450@2x.jpg 900w
+                "
+                sizes="(max-width: 480px) 450px, (max-width: 768px) 354px, (min-width: 1200px) 370px"
               />
             </div>
             <div class="projects__box">
@@ -145,10 +209,17 @@
                 </p>
               </div>
               <img
-                src="images/Portfolio/project3.jpg"
+                src="./images/Portfolio/project3-354.jpg"
                 alt="Restauracja Seafood - aplikacja"
-                width="370"
-                height="294"
+                srcset="
+                  ./images/Portfolio/project3-354.jpg    354w,
+                  ./images/Portfolio/project3-370.jpg    370w,
+                  ./images/Portfolio/project3-450.jpg    450w,
+                  ./images/Portfolio/project3-354@2x.jpg 708w,
+                  ./images/Portfolio/project3-370@2x.jpg 740w,
+                  ./images/Portfolio/project3-450@2x.jpg 900w
+                "
+                sizes="(max-width: 480px) 450px, (max-width: 768px) 354px, (min-width: 1200px) 370px"
               />
             </div>
             <div class="projects__box">
@@ -169,10 +240,17 @@
                 </p>
               </div>
               <img
-                src="images/Portfolio/project4.jpg"
+                src="./images/Portfolio/project4-354.jpg"
                 alt="Projekt Prime"
-                width="370"
-                height="294"
+                srcset="
+                  ./images/Portfolio/project4-354.jpg    354w,
+                  ./images/Portfolio/project4-370.jpg    370w,
+                  ./images/Portfolio/project4-450.jpg    450w,
+                  ./images/Portfolio/project4-354@2x.jpg 708w,
+                  ./images/Portfolio/project4-370@2x.jpg 740w,
+                  ./images/Portfolio/project4-450@2x.jpg 900w
+                "
+                sizes="(max-width: 480px) 450px, (max-width: 768px) 354px, (min-width: 1200px) 370px"
               />
             </div>
             <div class="projects__box">
@@ -193,10 +271,17 @@
                 </p>
               </div>
               <img
-                src="images/Portfolio/project5.jpg"
+                src="./images/Portfolio/project5-354.jpg"
                 alt="Projekt Boxes - aplikacja"
-                width="370"
-                height="294"
+                srcset="
+                  ./images/Portfolio/project5-354.jpg    354w,
+                  ./images/Portfolio/project5-370.jpg    370w,
+                  ./images/Portfolio/project5-450.jpg    450w,
+                  ./images/Portfolio/project5-354@2x.jpg 708w,
+                  ./images/Portfolio/project5-370@2x.jpg 740w,
+                  ./images/Portfolio/project5-450@2x.jpg 900w
+                "
+                sizes="(max-width: 480px) 450px, (max-width: 768px) 354px, (min-width: 1200px) 370px"
               />
             </div>
             <div class="projects__box">
@@ -217,10 +302,17 @@
                 </p>
               </div>
               <img
-                src="images/Portfolio/project6.jpg"
+                src="./images/Portfolio/project6-354.jpg"
                 alt="Inspiration has no Boarders - strona internetowa"
-                width="370"
-                height="294"
+                srcset="
+                  ./images/Portfolio/project6-354.jpg    354w,
+                  ./images/Portfolio/project6-370.jpg    370w,
+                  ./images/Portfolio/project6-450.jpg    450w,
+                  ./images/Portfolio/project6-354@2x.jpg 708w,
+                  ./images/Portfolio/project6-370@2x.jpg 740w,
+                  ./images/Portfolio/project6-450@2x.jpg 900w
+                "
+                sizes="(max-width: 480px) 450px, (max-width: 768px) 354px, (min-width: 1200px) 370px"
               />
             </div>
             <div class="projects__box">
@@ -241,10 +333,17 @@
                 </p>
               </div>
               <img
-                src="images/Portfolio/project7.jpg"
+                src="./images/Portfolio/project7-354.jpg"
                 alt="Magazyn Limited Edition"
-                width="370"
-                height="294"
+                srcset="
+                  ./images/Portfolio/project7-354.jpg    354w,
+                  ./images/Portfolio/project7-370.jpg    370w,
+                  ./images/Portfolio/project7-450.jpg    450w,
+                  ./images/Portfolio/project7-354@2x.jpg 708w,
+                  ./images/Portfolio/project7-370@2x.jpg 740w,
+                  ./images/Portfolio/project7-450@2x.jpg 900w
+                "
+                sizes="(max-width: 480px) 450px, (max-width: 768px) 354px, (min-width: 1200px) 370px"
               />
             </div>
             <div class="projects__box">
@@ -266,10 +365,17 @@
               </div>
               <div>
                 <img
-                  src="images/Portfolio/project8.jpg"
+                  src="./images/Portfolio/project8-354.jpg"
                   alt="Projekt LAB"
-                  width="370"
-                  height="294"
+                  srcset="
+                    ./images/Portfolio/project8-354.jpg    354w,
+                    ./images/Portfolio/project8-370.jpg    370w,
+                    ./images/Portfolio/project8-450.jpg    450w,
+                    ./images/Portfolio/project8-354@2x.jpg 708w,
+                    ./images/Portfolio/project8-370@2x.jpg 740w,
+                    ./images/Portfolio/project8-450@2x.jpg 900w
+                  "
+                  sizes="(max-width: 480px) 450px, (max-width: 768px) 354px, (min-width: 1200px) 370px"
                 />
               </div>
             </div>
@@ -291,10 +397,17 @@
                 </p>
               </div>
               <img
-                src="images/Portfolio/project9.jpg"
+                src="./images/Portfolio/project9-354.jpg"
                 alt="Growing Business - aplikacja"
-                width="370"
-                height="294"
+                srcset="
+                  ./images/Portfolio/project9-354.jpg    354w,
+                  ./images/Portfolio/project9-370.jpg    370w,
+                  ./images/Portfolio/project9-450.jpg    450w,
+                  ./images/Portfolio/project9-354@2x.jpg 708w,
+                  ./images/Portfolio/project9-370@2x.jpg 740w,
+                  ./images/Portfolio/project9-450@2x.jpg 900w
+                "
+                sizes="(max-width: 480px) 450px, (max-width: 768px) 354px, (min-width: 1200px) 370px"
               />
             </div>
             <div class="projects__box">
@@ -307,24 +420,25 @@
     </div>
     <footer class="footer">
       <div class="container footer__box">
-        <div class="footer__navigation">
-          <a class="footer__logo" href="index.html">
-            <span class="footer__logo-web">Web</span
-            ><span class="footer__logo-studio">Studio</span></a
-          >
-
-          <address class="footer__address">
-            m. Warszawa, Aleje Jerozolimskie 21
-          </address>
-
-          <a
-            class="footer__link footer__link--marg"
-            href="mailto:info@example.com"
-            >info@example.com</a
-          >
-          <a class="footer__link" href="tel:+48111111111">+48 111 111 111</a>
-        </div>
         <div class="footer__box-second">
+          <div class="footer__navigation">
+            <a class="footer__logo" href="index.html">
+              <span class="footer__logo-web">Web</span
+              ><span class="footer__logo-studio">Studio</span></a
+            >
+
+            <address class="footer__address">
+              m. Warszawa, Aleje Jerozolimskie 21
+            </address>
+
+            <a
+              class="footer__link footer__link--marg"
+              href="mailto:info@example.com"
+              >info@example.com</a
+            >
+            <a class="footer__link" href="tel:+48111111111">+48 111 111 111</a>
+          </div>
+
           <div class="footer-media">
             <p class="footer-media__heading">dołącz do nas</p>
             <ul class="footer-media__icons-list">
@@ -358,25 +472,32 @@
               </li>
             </ul>
           </div>
-          <div class="newsletter">
-            <p class="newsletter__heading">zapisz się do newslettera</p>
-            <form class="newsletter__form">
-              <input
-                class="newsletter__input"
-                type="email"
-                name="newsletter_email"
-                placeholder="E-mail"
-              />
-              <button class="newsletter__button" type="submit">
-                Zapisz się
-                <svg class="newsletter__button-icon" width="24" height="24">
-                  <use href="./images/icons.svg#icon-icon-send"></use>
-                </svg>
-              </button>
-            </form>
-          </div>
+        </div>
+        <div class="newsletter">
+          <p class="newsletter__heading">zapisz się do newslettera</p>
+          <form class="newsletter__form">
+            <input
+              class="newsletter__input"
+              type="email"
+              name="newsletter_email"
+              placeholder="E-mail"
+            />
+            <button class="newsletter__button" type="submit">
+              Zapisz się
+              <svg class="newsletter__button-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-icon-send"></use>
+              </svg>
+            </button>
+          </form>
         </div>
       </div>
     </footer>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
